@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabular - Antarmuka Modern untuk Database Anda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+    header, section, footer {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+      background: #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .logo {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    }
+    nav h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+    .hero img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+    }
+    .features, .how-it-works, .metrics, .support, .opensource, .testimonials, .contact {
+      margin-top: 80px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .metrics .card {
+      text-align: center;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      color: #374151;
+    }
+    .contact {
+      background: #111827;
+      color: white;
+      border-radius: 16px;
+      padding: 60px 40px;
+    }
+    .contact h3, .contact p {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 60px;
+    }
+    .btn {
+      display: inline-block;
+      background: #111827;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #1f2937;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="foto/30911111.png" alt="logo" class="logo">
+    <h1>Tabular</h1>
+    <div>
+      <a href="#fitur">Fitur</a>
+      <a href="#cara-kerja">Cara Kerja</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <section class="hero" data-aos="fade-up">
+    <h2>Kelola Database dengan Elegan & Cepat</h2>
+    <p>Tabular adalah antarmuka modern untuk mengelola semua jenis database. Ringan, cepat, dan powerful.</p>
+    <a class="btn" href="#kontak">Coba Sekarang</a>
+    <img src="foto/basic-ui.png" alt="Preview Tabular" />
+  </section>
+
+  <section class="features" id="fitur">
+    <h2 data-aos="fade-up">Fitur Unggulan</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <h3>Multi Database</h3>
+        <p>PostgreSQL, MySQL, SQLite, dan lainnya dalam satu aplikasi.</p>
+      </div>
+      <div class="card">
+        <h3>Tampilan Modern</h3>
+        <p>Dark mode, tab UI, dan desain intuitif.</p>
+      </div>
+      <div class="card">
+        <h3>Query Cepat</h3>
+        <p>Query editor dengan highlight, autocomplete, dan history.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="cara-kerja">
+    <h2 data-aos="fade-up">Cara Menggunakan Tabular</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <img src="foto/1753930314329.jpg" style="width:100%; border-radius:12px;" />
+      </div>
+      <div class="card">
+        <img src="foto/1753930332426.jpg" style="width:100%; border-radius:12px;" />
+      </div>
+      <div class="card">
+        <img src="foto/tab_frm_new_page.gif" style="width:100%; border-radius:12px;" />
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <h2 data-aos="fade-up">Performa & Keamanan</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <h3>300+ Halaman & Komponen</h3>
+        <p>UI yang lengkap dan siap pakai.</p>
+      </div>
+      <div class="card">
+        <h3>Auto Encrypt</h3>
+        <p>Semua koneksi diamankan dengan enkripsi TLS/SSL.</p>
+      </div>
+      <div class="card">
+        <h3>Fast Native</h3>
+        <p>Berjalan di sistem native untuk performa maksimal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="support">
+    <h2 data-aos="fade-up">Dukungan & Komunitas</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <h3>Dokumentasi Lengkap</h3>
+        <p>Panduan terperinci dan tutorial langkah demi langkah.</p>
+      </div>
+      <div class="card">
+        <h3>Forum Diskusi</h3>
+        <p>Bergabung dalam komunitas aktif untuk berbagi dan belajar.</p>
+      </div>
+      <div class="card">
+        <h3>Dukungan Prioritas</h3>
+        <p>Tersedia bagi pengguna premium dan enterprise.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="opensource">
+    <h2 data-aos="fade-up">Open Source & Close Source</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <h3>Open Source</h3>
+        <p>Beberapa modul tersedia secara terbuka di GitHub untuk kontribusi komunitas.</p>
+      </div>
+      <div class="card">
+        <h3>Close Source</h3>
+        <p>Versi premium dengan fitur lanjutan dan dukungan teknis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 data-aos="fade-up">Apa Kata Mereka?</h2>
+    <div class="grid" data-aos="fade-up">
+      <div class="card">
+        <blockquote>"Tabular sangat cepat dan nyaman, lebih baik dari tools lainnya."</blockquote>
+        <p>- Ardi, Developer Backend</p>
+      </div>
+      <div class="card">
+        <blockquote>"Tampilan modernnya bikin betah ngoding seharian."</blockquote>
+        <p>- Davin, Data Analyst</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontak" data-aos="fade-up">
+    <h2>Hubungi Kami</h2>
+    <p>Alamat: Jl. Kby. Lama No.6, Jakarta Selatan</p>
+    <p>Telp: 021-12345678</p>
+    <p>Email: support@tabular.id</p>
+    <p>Facebook: <a href="https://facebook.com/tabularid" style="color:#60a5fa;">facebook.com/tabularid</a></p>
+    <p>X (Twitter): <a href="https://x.com/tabularid" style="color:#60a5fa;">x.com/tabularid</a></p>
+  </section>
+
+  <footer>
+    © 2025 Tabular. Dibuat dengan ar pertiwi.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
